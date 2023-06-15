@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<com.google.android.material.card.MaterialCardView -->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_margin="8dp"-->
+<!--    android:elevation="12dp"-->
+<!--    app:cardCornerRadius="12dp"-->
+<!--    app:strokeColor="@color/grey"-->
+<!--    app:strokeWidth="1dp">-->
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+<RelativeLayout
+    android:id="@+id/btn_edit"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleY="1.5"
+        android:scaleX="1.5"
+        android:contentDescription="@string/checkbox"
+        android:id="@+id/completeButton"
+        android:layout_marginHorizontal="15dp"
+        android:src="@drawable/baseline_check_box_outline_blank_24"
+        android:backgroundTint="@android:color/transparent"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/completeButton"
+        android:layout_toStartOf="@+id/text_description"
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/pending"
+        android:layout_toEndOf="@+id/completeButton"
+android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/text_title"
+        android:text="Pending"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        />
+    <TextView
+        android:id="@+id/text_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/btn_delete"
+        android:text="7:00"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+     />
+    <ImageView
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/btn_delete"
+android:layout_alignParentEnd="true"
+        android:src="@drawable/baseline_clear_24"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:tint="@color/grey" />
+</RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/btn_edit"-->
+<!--                style="@style/Widget.MaterialComponents.Button"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:clickable="true"-->
+<!--                android:drawableEnd="@drawable/ic_baseline_edit_24"-->
+<!--                android:drawableTint="@color/white"-->
+<!--                android:focusable="true"-->
+<!--                android:text="Edit"-->
+<!--                android:textAllCaps="false" />-->
+
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/btn_delete"-->
+<!--                style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:clickable="true"-->
+<!--                android:drawableEnd="@android:drawable/ic_delete"-->
+<!--                android:drawableTint="@color/grey"-->
+<!--                android:focusable="true"-->
+<!--                android:textAllCaps="false" />-->
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+<!--</com.google.android.material.card.MaterialCardView>-->
